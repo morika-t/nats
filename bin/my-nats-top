@@ -9,7 +9,7 @@ require 'rubygems'
 require 'json'
 
 def usage
-  puts "Usage: nats-top [-s server_uri] [-m local monitor port] [-n num_connections] [-d delay_secs] [--sort sort_by]"
+  puts "Usage: nats-top [-s server_uri] [-m local_monitor_port] [-n num_connections] [-d delay_secs] [--auth id:passwd] [--sort sort_by]"
   puts "--sort_options for more help"
   exit
 end
