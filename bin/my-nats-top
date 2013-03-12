@@ -30,7 +30,7 @@ opts_parser = OptionParser.new do |opts|
   opts.on('-d delay')           { |delay|    $delay = delay.to_f }
   opts.on('--sort sort_by')     { |sort_key| $sort_key = sort_key }
   opts.on('--sort_options')     { sort_options_help }
-  opts.on('--auth id:passwd')   { |auth|     $account, $passwd = auth.split(':') }
+  opts.on('--auth id:passwd')   { |auth|     $account, $passwd = auth.split(':', 2) }
   opts.on('-h')     { usage }
   opts.on('--help') { usage }
 end
